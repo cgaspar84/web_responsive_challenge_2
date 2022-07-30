@@ -1,0 +1,242 @@
+body {
+    font-family: 'Oxygen', sans-serif;
+}
+
+#main {
+    background-color: #FCEAF3;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+header #title {
+    margin: 0;
+    width: 100%;
+    background-color: #234FE8;
+    padding: 30px 0;
+    color: white;
+    font-size: 45px;
+}
+
+header .subtitle {
+    height: 15px;
+    background-color: #43A7FF;
+}
+
+header h2 {
+    margin: 0;
+    width: 100%;
+    padding: 5px 0;
+    font-size: 18px;
+}
+
+#img-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#img-container #img-div {
+    height: auto;
+    text-align: center;
+    font-size: 16px;
+}
+
+#img-container #img-side img {
+    max-width: 100%;
+    object-fit: cover;
+    height: 300px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#img-container #img-div #image {
+    max-width: 100%;
+    object-fit: cover;
+    height: auto;
+    display: block;
+}
+
+#img-collage .grid-container {
+    max-width: 790px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#img-collage .grid-container {
+    display: grid;
+    background-color: white;
+    grid-template-areas:
+        "headerL headerL headerL headerR"
+        "main main aside1 aside1"
+        "main main aside2 aside2"
+        "footerA footerB footerB footerC";
+    gap: 10px;
+    padding: 10px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 200px 150px 150px 150px;
+
+}
+
+.grid-item-1 {
+    grid-area: headerL;
+    background-image: url('https://scontent.faep9-1.fna.fbcdn.net/v/t1.6435-9/101228608_643009016253504_8699237167471263744_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=0debeb&_nc_ohc=jL15jSGndZ0AX8BTV7z&_nc_ht=scontent.faep9-1.fna&oh=00_AT-PNMhYwP9tCbREQezAcfuDYx7wrc3AHpyBKrmsZBt93w&oe=630B66C1');
+    background-size: cover;
+    background-size: 100%;
+    background-position-y: -90px;
+}
+
+.grid-item-2 {
+    grid-area: headerR;
+    background-image: url('https://64.media.tumblr.com/d1bf45d57212b6ba587efb14d063e45e/53a56898399e5e1f-09/s2048x3072/8a8b21435376de237db840389b1fac70d2b13c6f.pnj');
+    background-size: cover;
+}
+
+.grid-item-3 {
+    grid-area: main;
+    background-image: url('https://pbs.twimg.com/media/EqqhO3CXYAMl8sU?format=jpg&name=medium');
+    background-size: cover;
+}
+
+.grid-item-4 {
+    grid-area: aside1;
+    background-image: url('https://d3fd5j8wprxn3h.cloudfront.net/wp-content/uploads/2014/06/tumblr_mjtfukizit1rxldc4o1_1280.jpg');
+    background-size: cover;
+    background-position-y: -30px;
+}
+
+.grid-item-5 {
+    grid-area: aside2;
+    background-image: url('https://images.wikidexcdn.net/mwuploads/wikidex/c/c0/latest/20211119203703/Giovanni_%28Gym_Challenge_18_TCG%29.png');
+    background-position-y: -160px;
+    background-position-x: -50px;
+    background-size: 130%;
+}
+
+.grid-item-6 {
+    grid-area: footerA;
+    background-image: url('https://images.wikidexcdn.net/mwuploads/wikidex/6/63/latest/20200509221820/Venusaur_%28Wizards_Promo_TCG%29.jpg');
+    background-position-y: -90px;
+    background-position-x: -90px;
+    background-size: 200%;
+}
+
+.grid-item-7 {
+    grid-area: footerB;
+    background-image: url('https://64.media.tumblr.com/1ecb33cebf7be08f96ab00d457d4fba5/tumblr_nmjxhay92f1rtaovmo1_500.png');
+    background-position-y: -120px;
+    background-position-x: -60px;
+}
+
+.grid-item-8 {
+    grid-area: footerC;
+    background-image: url('https://images.wikidexcdn.net/mwuploads/wikidex/d/d4/latest/20210509191000/Blastoise_%28Pok%C3%A9mon_Song_Best_Collection_Promo_TCG%29.png');
+    background-position-y: -100px;
+    background-position-x: -60px;
+}
+
+#tribute-info {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#tribute-info article {
+    padding-bottom: 20px;
+}
+
+#tribute-info h2 {
+    padding: 8px;
+    text-align: center;
+    background: #F6783A;
+    border: 1px solid #F6783A;
+    border-radius: 25px;
+    color: bisque;
+}
+
+#tribute-info p {
+    text-align: justify;
+}
+
+#quote-info {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#quote-info .blockquote {
+    max-width: 600px;
+    margin: 10px 30px;
+    padding: 25px;
+    background: #f0ecf3;
+    border: 1px solid #0050E7;
+    box-sizing: border-box;
+
+    border-left-width: 10px;
+}
+
+#quote-info .blockquote::before {
+    content: '\201c';
+    font-size: 100px;
+    color: #42A7FF;
+    display: block;
+    margin-bottom: -40px;
+    margin-top: -20px;
+}
+
+#quote-info .blockquote-text {
+    font-family: 'Gelasio', serif;
+    font-style: italic;
+    font-size: 1.15em;
+    line-height: 1.5;
+    margin: 0;
+    color: gray;
+}
+
+#quote-info .blockquote-text-author {
+    font-weight: bold;
+    font-size: normal;
+    text-align: right;
+}
+
+#quote-info .blockquote-text-author::before {
+    content: '\2014\0020';
+}
+
+#quote-info .blockquote-text:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+footer .links-container {
+    display: grid;
+    font-size: 15px;
+    line-height: 0.8;
+    place-items: center;
+}
+
+footer .links-container #tribute-link {
+    text-decoration: none;
+    color: #18272F;
+    font-weight: 700;
+}
+
+footer .links-container #tribute-link:hover {
+    background-color: black;
+    color: white;
+    transition: all .3s ease-in;
+    padding: 10px;
+    border-radius: 20px;
+}
